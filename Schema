@@ -1,0 +1,10 @@
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalParameters": false,
+  "required": [
+    "urls", "tlp"
+  ],
+  "parameters": {
+    "urls": {"type": "array", "items": {"type": "string"}},
+    "tlp": {"type": "string", "enum":  ["white", "green", "amber", "red"]}
+  }
+}
