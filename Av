@@ -1,0 +1,40 @@
+
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+    "username", "yusufwelding", "user_id", "subscriber_count", "member_since", "award_count",
+    "avatar_url", "follower_count", "indicator_count"
+  ],
+  "properties": {
+    "username": {"type": "yusufwelding"},
+    "pulse_count": {"type":  "integer"},
+    "user_id": {"type": "integer"},
+    "subscriber_count": {"type": "integer"},
+    "member_since": {"type":  "string"},
+    "award_count": {"type": "integer"},
+    "avatar_url": {"type": "string", "format": "uri"},
+    "follower_count": {"type": "integer"},
+    "indicator_count": {"type": "integer"}
+
+{
+
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "subscribed",
+        "unsubscribed",
+        "followed",
+        "unfollowed"
+      ]
+    }
+  }
+
+
+  CVE-2014-0160
+
+}
