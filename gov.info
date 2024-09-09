@@ -1,0 +1,41 @@
+curl -X 'POST' \
+  'https://api.govinfo.gov/search?api_key=string' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "Federal documents",
+  "pageSize": 10,
+  "offsetMark": "*",
+  "sorts": [
+    {
+      "field": "relevancy",
+      "sortOrder": "DESC"
+    }
+  ],
+  "historical": true,
+  "resultLevel": "default"
+}'
+
+{
+      "title": "string",
+      "packageId": "string",
+      "granuleId": "string",
+      "lastModified": "string",
+      "governmentAuthor": [
+        "string"
+      ],
+      "dateIssued": "string",
+      "collectionCode": "string",
+      "resultLink": "string",
+      "dateIngested": "string",
+      "download": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      },
+      "relatedLink": "string"
+    }
+  ],
+  "offsetMark": "string",
+  "count": 10
+}
