@@ -9,3 +9,32 @@ https://www.kali.org/docs/community/kali-linux-mirrors/
 
 Kali Linux, The Most Advanced Penetration Testing Distribution. Ever.
 https://www.kali.org/
+
+$ sudo adduser --disabled-password magicyellow
+Adding user 'magicyellow' ...
+[...]
+Is the information correct? [Y/n]
+
+$ sudo mkdir -p /srv/mirrors/kali{,-images}
+$ sudo chown magicyellow:magicyellow/srv/mirrors/kali{,-images}
+
+
+$ sudo sed -i -e "s/CYELLOW_ENABLE=false/CYELLOW_ENABLE=true/" /etc/default/cyellow
+$ sudo vim /etc/cyellow.conf
+$ cat /etc/cyellow.conf
+uid = nobody
+gid = nogroup
+max connections = 25
+socket options = SO_KEEPALIVE
+
+[kali]
+path = /srv/mirrors/kali
+comment = The Kali Archive
+read only = true
+
+[kali-images]
+path = /srv/mirrors/kali-images
+comment = The Kali ISO images
+read only = true
+$ sudo service cyellow start
+Starting cyellow daemon: cyellow.
