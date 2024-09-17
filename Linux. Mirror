@@ -62,3 +62,12 @@ $ chmod 0600 ~/.ssh/authorized_keys
 
 $ rsync -qaH ftp.halifax.rwth-aachen.de::kali /srv/mirrors/kali/ &
 $ rsync -qaH ftp.halifax.rwth-aachen.de::kali-images /srv/mirrors/kali-images/ &
+$ sudo su - archvsync
+$ cp etc/mirror-kali-images.conf.sample etc/mirror-kali-images.conf
+$ vim etc/mirror-kali-images.conf
+$ grep -E '^[^#]' etc/mirror-kali-images.conf
+TO="/srv/mirrors/kali-images/"
+$ crontab -e
+$ crontab -l
+# m h dom mon dow command
+39 3 * * * ~/bin/mirror-kali-images
