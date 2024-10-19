@@ -1,0 +1,10 @@
+{
+  "kind": string,
+  "etags": string,
+  "productId": string,
+  "userId": string,
+  "selfLink": string,
+  "skuId": string,
+  "skuName": string,
+  "productName": string
+}
