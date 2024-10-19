@@ -54,3 +54,5 @@ rpc CreateBook(CreateBookRequest) returns (Book) {
     }
   };
 }
+
+ - "reff":"https://www.googleapis.com/auth/apps.licensing"
