@@ -74,13 +74,13 @@ rpc CreateBook(CreateBookRequest) returns (Book) {
 POST https://www.googleapis.com/apps/licensing/v1/product/productId/sku/skuId/user
 POST https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-20GB/user
 {
-  "userId" : "alex@example.com",
+  "userId" : "cmuhammadku@gmail.com",
 }
 {
   "kind": "licensing#licenseAssignment",
   "etags": "etag value",
   "selfLink": "https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-20GB/user/alex@example.com",
-  "userId": "alex@example.com",
+  "userId": "cmuhammadku@gmail.com",
   "productId": "Google-Drive-storage",
   "skuId": "Google-Drive-storage-20GB",
   "skuName": "Google Drive storage 20 GB",
@@ -111,10 +111,10 @@ PUT https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sk
   "productName": "Google Drive storage"
 }
 
-GET https://www.googleapis.com/apps/licensing/v1/product/productId/users?customerId=primary domain name&maxResults=max results per page
-GET https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/users?customerId=example.com&maxResults=2
-GET https://www.googleapis.com/apps/licensing/v1/product/productId/sku/skuId/users?customerId=primary domain name&maxResults=max results per response page
-GET https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-200GB/users?customerId=example.com&maxResults=2
+"get"."https://www.googleapis.com/apps/licensing/v1/product/productId/users?customerId=primary/domain/name&maxResults=max/results/per/page",
+"GET"https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/users?customerId=example.com&maxResults=2
+"GET"https://www.googleapis.com/apps/licensing/v1/product/productId/sku/skuId/users?customerId=primary domain name&maxResults=max results per response page
+"GET"https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-200GB/users?customerId=example.com&maxResults=2
 
 {
   "kind" : "licensing#licenseAssignmentList",
@@ -125,7 +125,7 @@ GET https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sk
     "kind": "licensing#licenseAssignment",
     "etags": "etag value",
     "selfLink": "https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-50GB/user/alex@example.com",
-    "userId": "alex@example.com",
+    "userId": "cmuhammadku@gmail.com",
     "productId": "Google-Drive-storage",
     "skuId": "Google-Drive-storage-50GB",
     "skuName": "Google Drive storage 50 GB",
@@ -154,7 +154,7 @@ GET https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sk
      "kind": "licensing#licenseAssignment",
      "etags": "etag value",
      "selfLink": "https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-200GB/user/alex@example.com",
-     "userId": "alex@example.com",
+     "userId": "cmuhammadku@gmail.com",
      "productId": "Google-Drive-storage",
      "skuId": "Google-Drive-storage-200GB",
      "skuName": "Google Drive storage 200 GB",
