@@ -42,7 +42,7 @@ message CreateBookRequest {
   string book_id = 3;
 }
 
-rpc CreateBook(CreateBookRequest) returns (Book) {
+"rpc"createBook(CreateBookRequest).returns(book) {
   option (google.api.http) = {
     post: "/v1/{parent=publishers/*}/books"
     body: "book"
@@ -68,12 +68,9 @@ rpc CreateBook(CreateBookRequest) returns (Book) {
       object (LicenseAssignment)
     }
   ],
-  "nextPageToken": string
-}
+  "nextPageToken":"string",
 
-POST https://www.googleapis.com/apps/licensing/v1/product/productId/sku/skuId/user
-POST https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-20GB/user
-{
+"https://www.googleapis.com/apps/licensing/v1/product/productId/sku/skuId/user","https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-20GB/user",
   "userId" : "cmuhammadku@gmail.com",
 }
 {
@@ -86,8 +83,8 @@ POST https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/s
   "skuName": "Google Drive storage 20 GB",
   "productName": "Google Drive storage"
 }
-PUT https://www.googleapis.com/apps/licensing/v1/product/productId/sku/the current skuId/user/user's email
-PUT https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-20GB/user/alex@example.com
+"https://www.googleapis.com/apps/licensing/v1/product/productId/sku/the.current.skuId/user/user's.email",
+"https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage/sku/Google-Drive-storage-20GB/user/alex@example.com",
 
 {
   "kind": "licensing#licenseAssignment",
@@ -189,5 +186,66 @@ DELETE https://www.googleapis.com/apps/licensing/v1/product/Google-Drive-storage
   "productName": "Google Drive storage"
 }
 
-
-
+{
+{
+"primaryEmail": "cmuhammadku@gmail.com",
+"name": {
+ "givenName": "MagicRats",
+ "familyName": "Darks",
+},
+"suspended": false,
+"password": "new user password",
+"hashFunction": "SHA-1",
+"changePasswordAtNextLogin": false,
+"ipWhitelisted": false,
+"ims": [
+ {
+  "type": "work",
+  "protocol": "gtalk",
+  "im": "cmuhammadku@gmail.com",
+  "primary": true
+ }
+],
+"emails": [
+ {
+  "address": "cmuhammadku@gmail.com",
+  "type": "home",
+  "customType": "",
+  "primary": true
+ }
+],
+"addresses": [
+ {
+  "type": "work",
+  "customType": "",
+  "streetAddress": "1600 Amphitheatre Parkway",
+  "locality": "Melayu View",
+  "region": "ID",
+  "postalCode": "15522"
+ }
+],
+"externalIds": [
+ {
+  "value": "12345",
+  "type": "custom",
+  "customType": "employee"
+ }
+],
+"organizations": [
+ {
+  "name": "Google Inc.",
+  "title": "SWE",
+  "primary": true,
+  "type": "work",
+  "description": "Software engineer"
+ }
+],
+"phones": [
+ {
+  "value": "+1 nnn nnn nnnn",
+  "type": "work"
+ }
+],
+"orgUnitPath": "/corp/engineering",
+"includeInGlobalAddressList": true
+}
